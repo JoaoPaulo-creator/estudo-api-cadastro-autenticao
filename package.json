@@ -1,0 +1,28 @@
+{
+  "name": "api-autenticacao-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx nodemon --exec ts-node --files src/index.ts",
+    "typeorm": "npx ts-node ./node_modules/typeorm/cli.js",
+    "generate_migrations": "npx ts-node ./node_modules/typeorm/cli.js migration:run -d src/config/ormconfig.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/node": "^18.11.9",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.8.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.10"
+  }
+}
