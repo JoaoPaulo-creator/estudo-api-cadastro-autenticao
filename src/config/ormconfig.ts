@@ -14,5 +14,3 @@ export const connectionDataBase = new DataSource({
         "src/database/migrations/*.ts"
     ]
 })
-
-connectionDataBase.initialize()
